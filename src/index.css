@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+
+:root {
+  --black: #000000;
+  --light-black: #111111;
+  --more-light-black: #232323;
+  --gray: #343434;
+  --light-gray: #464646;
+  --white: #ffffff;
+}
+
+body, h6, h5, h4, h3, h2, h1, p {
+  font-family: 'Mukta Malar', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  background-color: var(--light-black);
+  color: var(--light-gray);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: calc(100vh - 4rem);
+}
+
+
+main > .card {
+  width: 100vw;
+  max-width: 60%;
+  box-sizing: border-box;
+  background-color: var(--black);
+  color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 7px;
+  box-shadow: 1px 3px 5px var(--light-gray);
+}
+
+.search > form > button {
+  width: 6rem;
+  background-color: var(--more-light-black);
+  color: rgb(135, 127, 127);
+  border: none;
+  box-sizing: border-box;
+  /* border-color: var(--more-light-black); */
+  border-style: 5px solid;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.search > form > button:hover {
+  color: var(--black);
+  background-color: var(--light-gray);
+}
+.search>form>input:hover {
+  background-color: var(--light-gray);
+}
+
+.search > form > input {
+  border: none;
+  background-color: var(--more-light-black);
+  color: var(--white);
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 1rem;
+  width: calc(100% - 7rem);
+  border-radius: 3px;
+  transition: all 0.15s linear;
+}
+
+.search > form > input:focus {
+  outline-color: var(--dark-blue);
+}
+
+
+.detail > img {
+  width: 10rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  outline: 2px solid var(--light-gray);
+}
+
+.section-right {
+  display: inline-block;
+  margin: 2.3rem 0.5rem 0px; /* top | horizontal (left, right) | bottom */
+  vertical-align: top;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  width: 10rem;
+  padding: 0.5rem 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 2px;
+}
+
+.buttons > button > span {
+  display: block;
+  font-weight: bold;
+}
+
+.buttons > button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.detail a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.detail a:visited {
+  color: var(--navy-blue);
+}
+
+.incorrect {
+  color: red;
+}
+
+.incorrect-input {
+  outline-color: red !important;
+  border-color: red !important;
+  border-style: solid;
+}
+
+.active {
+  outline: 3px solid var(--blue) !important;
+}
+
+.following-list img, .followers-list img  {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.repo-list th {
+  text-align: left;
+}
+
+.load-more {
+  margin-top: -2.5rem;
+}
+
+.load-more button { 
+  width: 100%;
+  padding: 5px 0px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 2px;
+}
+
+.load-more button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.footer {
+  text-align: center;
+}
