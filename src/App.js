@@ -12,7 +12,7 @@ function App() {
   const [repoList, setRepoList] = useState([]);
   const [followerList, setFollowerList] = useState([]);
   const [followingList, setFollowingList] = useState([]);
-  const [username, setUsername] = useState("dnyaneshwarwagh0072");
+  const [username, setUsername] = useState("");
   const [isSuccessful, setSuccessful] = useState(true);
   const [visibleComponent, setVisibleComponent] = useState(2);
   // 1 -> Follower List | 2 -> Repo List | 3 -> Following List
